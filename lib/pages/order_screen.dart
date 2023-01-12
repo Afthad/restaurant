@@ -52,9 +52,9 @@ class _PlaceOrderScreenState extends State<PlaceOrderScreen> {
       });
      values.sort((a, b) => b.count.compareTo(a.count));
 
-     values=values.sublist(0,3);
-      
-
+     if (values.length > 3) {
+        values = values.sublist(0, 3);
+      }
       
      
 
